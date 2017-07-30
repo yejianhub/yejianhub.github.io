@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maxmum-scale=1.0, user-scalable=no"/>
+	<title>商品服务</title>
+	<style>
+	*{
+		margin:0;
+		padding:0;
+	}
+	.main{
+			max-width:640px;
+			min-width:300px;
+			margin:0 auto;
+		}
+   .head_img img{
+   	width:100%;
+   }
+    .head_img{
+    	margin-bottom:54px;
+    }
+    h3{
+    	width:100%;
+    	text-align:center;
+    	margin-bottom:40px;
+    	margin-top:80px;
+    	font-size:30px;
+    	font-weight:normal;
+
+    }
+    /*商品*/
+    .good{
+    	width:90%;
+    	height:85px;
+    	margin:0 auto;
+    	background:#b88400;
+    	border-radius:10px;
+    	text-align:center;
+    }
+.good span{
+	  color:#fff;
+	  font-size:20px;
+	  font-weight:bold;
+	  margin-left:20px;
+	  display:inline-block;
+	  height:85px;
+	  line-height:85px;
+}
+/*服务专区*/
+.all_district{
+     width:90%;
+     margin:0 auto;
+}
+.service_district{
+	width:100%;
+	height:90px;
+	display:flex;
+	justify-content:space-between;
+	margin-bottom:40px;
+}
+.service_district div{
+	width:45%;
+	height:90px;
+	background:#f2f2f2;
+	text-align:center;
+}
+.service_district div{
+	display:inline-block;
+	height:90px;
+	line-height:90px;
+}
+.service_district i{
+	margin-right:20px;
+}
+/*底部*/
+		.footer{
+			margin-top:20px;
+			width:100%;
+			height:66px;
+			background:#f2f2f2;
+		}
+		.footer_content{
+			padding-top:20px;
+			width:60%;
+			height:100%;
+			margin:0 auto;
+			display:flex;
+			justify-content:space-between;
+		}
+		a{
+			text-decoration:none;
+			color:#000;
+		}
+		.footer_content a{
+			display:inline-block;
+			height:20px;
+			font-size:20px;
+			line-height:20px;
+			height:20px;
+			margin-right:15px;
+			vertical-align:top;
+		}
+		.footer_content div{
+			height:20px;
+			padding:0px;
+		}
+		.footer_content div span{
+			display:inline-block;
+			height:20px;
+			width:2px;
+			background:#000;
+		}
+/*引入字体文件*/
+@font-face {  
+  font-family: "icomoon";  
+  src: url("fonts/icomoon.eot");  
+  src: url("fonts/icomoon.eot?#iefix") format("embedded-opentype"),   
+  url("fonts/icomoon.woff") format("woff"),   
+  url("fonts/icomoon.ttf") format("truetype"),   
+  url("fonts/icomoon.svg#icomoon") format("svg");  
+  font-weight: normal;  
+  font-style: normal;  
+}  
+
+.icon_1:before{
+	content:"\e902";
+}
+.icon_2:before{
+	content:"\e906";
+}
+.icon_3:before{
+	content:"\e903";
+}
+.icon_4:before{
+	content:"\e908";
+}
+.icon_5:before{
+	content:"\e907";
+}
+.icon_6:before{
+	content:"\e900";
+}
+.icon_7:before{
+	content:"\e904";
+}
+.icon{
+	font-family:"icomoon";
+	font-style:normal;
+	font-size:24px;
+}
+.icon_2,.icon_3{
+	font-size:18px;
+}
+/*媒体查询*/
+@media screen and (max-width:550px){
+	.footer_content a{
+		font-size:16px;
+		margin-right:10px;
+	}
+	.footer_content{
+		width:50%;
+	}
+	.footer_content div span{
+            height:15px;
+			width:1px;
+	}
+}
+@media screen and (max-width:470px){
+	.footer_content a{
+		font-size:12px;
+		
+	}
+	.footer_content{
+		width:60%;
+	}
+	.footer_content div span{
+            height:13px;
+			width:1px;
+	}
+	
+}
+</style>
+</head>	
+<body>
+<div class="main">
+	<div class="head_img"><img src="images/service/1.png"></div>
+    <div class="good">
+    	<a href="http://www.b-c-s.cn/commodity.html"><i class="icon_1 icon"></i><span>商品</span></a>
+    </div>
+    <h3>服务专区</h3>
+    <div class="all_district">
+    	<div class="service_district">
+    	<div><a href="http://www.b-c-s.cn/game.html"><i class="icon_2 icon"></i><span>游戏服务</span></a></div>
+    	<div><a href="http://www.b-c-s.cn/serviceCentre.html"><i class="icon_3 icon"></i><span>修行服务</span></a></div>
+    </div>
+
+    <div class="service_district">
+    	<div><a href="http://www.b-c-s.cn/serviceCentre.html"><i class="icon_4 icon"></i><span>祝福服务</span></a></div>
+    	<div><a href="http://www.b-c-s.cn/serviceCentre.html"><i class="icon_5 icon"></i><span>私人定制</span></a></div>
+    </div>
+
+    <div class="service_district">
+    	<div><a href="http://www.b-c-s.cn/serviceCentre.html"><i class="icon_6 icon"></i><span>企业制定</span></a></div>
+    	<div><a href="http://www.b-c-s.cn/serviceCentre.html"><i class="icon_7 icon"></i><span>寺庙优化</span></a></div>
+    </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+   	<div class="footer_content">
+   		<div><a href="http://www.b-c-s.cn/shadow.html">佛国掠影</a><span></span></div>
+   		<div><a href="http://www.b-c-s.cn/job.html">招贤纳士</a><span></span></div>
+   		<div><a href="http://www.b-c-s.cn/contact.html">联系我们</a></div>
+   	</div>
+</div>
+</body>
+</html>
